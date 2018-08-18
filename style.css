@@ -1,0 +1,391 @@
+body {
+    background-color: #edf0f4;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poiret One', cursive;
+}
+
+p,
+a,
+li,
+small,
+details,
+summary,
+input {
+    font-family: 'Raleway', serif;
+}
+
+#info {
+    font-size: 0.9em;
+}
+
+#eventSearch {
+    width: 110px;
+}
+
+h1 {
+    padding: 20px 0px;
+}
+
+h3 {
+    text-align: left;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#searchBox {
+    width: 170px;
+}
+
+.search p {
+    margin: 5px;
+}
+
+
+/*
+.types {
+    height: 80px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+*/
+
+input {
+    background-color: #edf0f4;
+    border: 2px solid gray;
+    font-size: 0.9em;
+    margin: 4px 2px;
+    padding: 5px;
+}
+
+input[type="text"] {
+    background: white;
+}
+
+input[type="button"] {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: lightgray;
+    transform: scale(1.05);
+}
+
+.day {
+    font-size: 1.6em;
+}
+
+#groupsContainer {
+    padding-top: 10px;
+}
+
+.group {
+    display: inline-block;
+    width: 150px;
+    height: 280px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.group:hover {
+    transform: scale(1.1);
+}
+
+.groupText {
+    margin: 5px;
+}
+
+.group img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    padding-bottom: 0px;
+}
+
+.groupName {
+    height: 40px;
+    overflow: hidden;
+}
+
+.event {
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    padding-top: 15px;
+    width: 200px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.event .numbers,
+.event .details {
+    display: block;
+    vertical-align: top;
+    margin: 0px 10px;
+}
+
+.event .details h4 {
+    height: 40px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+.event .numbers p {
+    padding: 0px;
+    margin: 5px;
+}
+
+.event .numbers {
+    width: auto;
+}
+
+.event .details {
+    text-align: center;
+}
+
+.generate,
+.groups,
+.search,
+.sort,
+.select {
+    padding: 20px 0px;
+}
+
+.group input {
+    display: none;
+}
+
+label {
+    display: block;
+    position: relative;
+}
+
+:checked + label img {
+    opacity: 0.2;
+}
+
+.loader {
+    border: 8px solid white;
+    border-radius: 50%;
+    border-top: 8px solid gray;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    margin: 30px auto;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#navSearch {
+    width: 90%;
+    max-width: 300px;
+    margin: 0px auto 10px auto;
+}
+
+#navSearchBox {
+    width: 65%;
+}
+
+.navSearchHide {
+    display: none;
+}
+
+.navSearchShow {
+    display: inline-block;
+}
+
+.navbarFixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 86%;
+}
+
+#navbar {
+    background-color: #dbe1e8;
+}
+
+.nav {
+    width: auto;
+    /*Chrome Reset*/
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    /*Firefox Reset*/
+    -moz-padding-start: 0px;
+    -moz-margin-before: 0px;
+    -moz-margin-after: 0px;
+    /*IE Reset*/
+    -ms-padding-start: 0px;
+    -ms-margin-before: 0px;
+    -ms-margin-after: 0px;
+    /*Opera Reset*/
+    -o-padding-start: 0px;
+    -o-margin-before: 0px;
+    -o-margin-after: 0px;
+    /* Other */
+    text-align: center;
+    margin-right: 20px;
+}
+
+.nav li {
+    padding: 3px 0px;
+    display: inline-block;
+    width: 28%;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.nav li:hover {
+    transform: scale(1.1);
+}
+
+.nav li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 324px) {
+    .group {
+        width: 40%;
+        height: 240px;
+    }
+    .group img {
+        width: 33vw;
+        height: 33vw;
+    }
+}
+
+@media only screen and (min-width: 324px) and (max-width: 480px) {
+    .group {
+        width: 100%;
+        height: 100px;
+        margin: 8px 0px;
+        text-align: left;
+        overflow: hidden;
+    }
+    .meetupImg {
+        display: inline-block;
+        vertical-align: top;
+        /* 2 HOURS OF TESTING AND FAILIURE UNTIL THIS WORKED */
+    }
+    .group label {
+        width: 100px;
+        height: 100px;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        overflow: hidden;
+    }
+    .groupText {
+        padding: 0px 10px;
+        display: inline-block;
+        width: 50%;
+    }
+    .groupName {
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .group img {
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+        padding-bottom: 0px;
+    }
+    .groupText p {
+        margin: 10px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 290px) and (max-width: 600px) {
+    .event {
+        margin: 10px 0px;
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+        text-align: left;
+        font-size: 0.77em;
+    }
+    .event .details h4 {
+        height: 40px;
+        margin: 10px 0px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        font-size: 1.3em;
+    }
+    .event .numbers p {
+        padding: 0px;
+        margin: 5px;
+        margin-right: 0px;
+        width: 60px;
+    }
+    .event .numbers,
+    .event .details {
+        display: inline-block;
+    }
+    .event .numbers {
+        text-align: center;
+        padding: 5px 0px;
+        margin: auto;
+    }
+    .event .details {
+        text-align: left;
+        width: 60%;
+    }
+    .event .details p {
+        margin: 4px 0px;
+        height: 30px;
+        overflow: hidden;
+    }
+}

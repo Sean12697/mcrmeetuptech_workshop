@@ -1,0 +1,83 @@
+body {
+    background-color: #eee;
+    text-align: center;
+}
+
+.group {
+    display: inline-block;
+    width: 150px;
+    height: 280px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition-duration: 0.4s;
+}
+
+.group:hover {
+    transform: scale(1.1);
+}
+
+.groupText {
+    margin: 5px;
+}
+
+.group img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    padding-bottom: 0px;
+}
+
+.groupName {
+    height: 40px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 324px) and (max-width: 480px) {
+    
+    .group {
+        width: 100%;
+        height: 100px;
+        margin: 8px 0px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .group label {
+        width: 100px;
+        height: 100px;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+   .meetupImg {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+ .groupText {
+        padding: 0px 10px;
+        display: inline-block;
+        text-align: left;
+        width: 50%;
+    }
+
+    .groupName {
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .group img {
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+        padding-bottom: 0px;
+    }
+
+    .groupText p {
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+}
